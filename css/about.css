@@ -1,0 +1,43 @@
+.about{        /* styling about ( text of about) */
+    height: 100vh;
+    /*background: url('image/lehlo.jpg') no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 200px;
+    padding: 0 10%;
+    border: 2px solid red;
+}
+
+.about-txt{                     /*Styling the about text*/
+  
+}
+
+.about-main{ 
+    border: 2px solid black;                   /*Styling the about container*/
+    width: 1130px;
+    /*padding: 5px 50px 20px 0;*/
+    max-width: 200%;
+    align-items: center;
+    /*justify-content: space-around;*/
+    
+}
+
+.about-txt h2{                  /*Styling the heading of the about*/
+    position: relative;
+    color: #00c4cc;
+    font-size: 50px;
+    font-weight: 700px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-txt .btn-box{   /*Styling the button text in about*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}

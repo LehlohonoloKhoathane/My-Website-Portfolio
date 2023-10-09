@@ -1,0 +1,28 @@
+
+button#scrollToTopButton {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button#scrollToTopButton:hover {
+    background-color: #0056b3;
+}
+
+button#scrollToTopButton .arrow {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+button#scrollToTopButton .text {
+    margin-left: 10px;
+}

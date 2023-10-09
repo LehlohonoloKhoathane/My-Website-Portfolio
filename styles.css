@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); /* importing poppins fonts family */
+
+*{                                       /* styling of everything on website*/                     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{                                   /* styling body */
+    background: #154D74;
+    color: #00c4cc;
+}
+
+.header{                              /* styling header or navigation of the website */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{                             /* styling logo (Khoathane.) of the website */
+    position: relative;
+    font-size: 25px;
+    color: #00c4cc;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{                            /* styling links on a navigation bar */
+    font-size: 18px;
+    color: #00c4cc;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{                     /* enabling a link to be selected , selecting and styling the active link in navigation bar */
+    color: #081b29;
+}
+
+.Downl a::before{                    /*styling download my cv button to transition*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00c4cc;
+    z-index: -1;
+    transition: .5s;
+}
+
+.Downl a:hover:before{        /*styling the link of download cv, */
+    width: 100%;
+}
+
+
+.Downl a{                     /*styling the link on download my cv button*/
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #00c4cc;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #00c4cc;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.Downl a:hover{   /*styling making the link to change color when pointing at it*/
+    color: #081b29;
+}
+
+
+.home{        /* styling the home ( text of a home) */
+    height: 100vh;
+    /*background: url('image/lehlo.jpg') no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{  
+      /*setting the size of the text in home */
+    
+    padding-right: 20%;
+    
+    border: 2px solid red;
+    margin-right: 0px;
+
+}
+
+.home-content h1{     /* styling the element child of home content */
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h2{   /*selecting and styling the second child of a home*/
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #081b29;
+}
+
+.home-content p{  /*styling the paragraph on home page*/
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.home-content .btn-box{   /*styling the buttons of hire and talk to me*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    /*background: #ededed;*/
+}
+
+.home-content .Downl{   /*styling the download button for cv*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    /*background: #ededed;*/
+}
+
+.btn-box a{              /*styling the first links of buttons*/
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #fffff4;
+    border: 2px solid #00c4cc;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #00c4cc;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover{   /*styling the link of "hire me"*/
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2){  /*styling the link of "talk to me", meaning the second child of a button, btn-box*/
+    background: transparent;
+    color: #00c4cc;
+}
+.btn-box a:nth-child(2):hover{  /*styling the link "talk to me" inside the button, second child of btn-box*/
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before{   /*styling the background of second button*/
+    background: #00c4cc;
+}
+
+.btn-box a::before{                 /*styling hire and talk to me button top transition*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00c4cc;
+    z-index: -1;
+    transition: .5s;
+}
+ 
+.btn-box a:hover:before{        /*styling the links of buttons*/
+    width: 100%;
+}
+
+.home-sci{                  /*styling social ice=ons*/
+    position: absolute;
+    align-content: center;
+    bottom: 0px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+
+.home-sci a{                    /*Styling the link of social media icons*/
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00c4cc;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00c4cc;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{              /*styling the background text link of buttons*/
+    color: #081b29;
+}
+
+.home-sci a::before{            /*styling the link of social media icons*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00c4cc;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover:before{           /*styling the link of social media icons*/
+    width: 100%;
+}
+
+.home-imgHover{                     /*styling the image*/
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    /*border: 2px solid red;*/
+    transition: 3s;
+    animation: manipActivehover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+
+.home-imgHover:hover{               /*styling the image on home page*/
+    background: #fffff4;
+    opacity: .8;
+}
+
+.footerBottom{                          /*styling the footer */
+    background-color: #fffff4;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+.footerBottom p{                        /*styling the paragraph of the footer*/
+    color: #00c4cc;
+}
+
+.Designer{                              /*selecting the designer and styling it  */
+    opacity: 0.7;                       
+
+    letter-spacing: 1px;                /*creating the space between the texts */
+    font-weight: 400;                   /*Making the font*/
+    margin: 0px 5px;                    /*Creating space around text*/
+}
+.profile{                       /*styling the profile picture*/
+    float: right;               /*placing the picture to the right of the page */
+    padding: 60px;             /*creating the space of 160px between picture and the end of the page*/
+    border-radius: 50%;         /*making the border of the pucture to be 50%*/
+    border: 2px solid red;
+    margin: 100px;
+}
+/*KEYFRAMES ANIMATION*/
+@keyframes showRight{               /*seting the width of the .home-sci::before (social media links) to 0 when 100% complete*/ 
+    100%{
+        width: 0;
+    }
+}
+@keyframes manipActivehover{        /*making the .home-imgHover (span) to react to pointer events automatically*/
+    100%{
+        pointer-events: auto;
+    }
+}
+#section_wrapper{
+    width: 100%;
+    padding: 100px;
+}
+
+.box_wrapper{
+    position: relative;
+    display: table;
+    width: 1100px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+
+.info_wrapp{
+ 
+    height: 551px;
+    padding: 40px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background-color: #555;
+}
+
+form h2{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 2px solid #555;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 15px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+form button{
+    padding: 15px;
+    background: red;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 30px;
+    width: 200px;
+}
+.form-wrap{
+    border: 2px solid red;
+}
+
+.form-wrap h2{
+    padding: 10px 20px 0px 100px;
+}
+.butn-submit{
+    position: relative;
+    padding: 10px 50px 20px 540px;
+}
+
+textarea{
+    height: 150px;
+}
+
+.info_title{
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+.info_subtitle{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+
+.info_details{
+    list-style: none;
+    margin: 60px 0px;
+}
+
+
+#mySkills{     
+    position: relative;
+    margin: 100px 0;              /*styling the section of the skills*/
+   /* height: 50%;
+    width: 100%;
+    padding: 50px 13%;*/
+    background-color: rgba(0, 0, 0, 0.080);
+    margin-top: 80px;
+}
+.my_Skills_heading{  
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.my_Skills_heading h2{                  /*styling the heading of the skills set*/
+    margin-bottom: -15px;
+}
+.my_Skills_heading h2 span{             /*styling the span of heading making it red*/
+    color: #2E3132;
+}
+.mainSkills{                            /*styling the mainhheadings in skills*/ 
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    grid-gap: 100px;
+   /* grid-column-gap: 50px;
+    grid-row-gap: 20px;*/
+}
+
+.skillbars{
+    position: relative;
+}
+
+.skillsImage{
+    display: block;
+    margin: auto;
+    height: 100px;
+    opacity: 0.7;
+}
+
+.skillsName{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+}
+
+.skills-info{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skills-rate{
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    /*border-radius: 50%;
+    border: 10px solid #00c4cc;*/
+}
+
+ski
+
+.skills-sci{
+    position: absolute;
+    align-content: center;
+    bottom: 150px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-sci a{                    /*Styling the link of social media icons*/
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00c4cc;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00c4cc;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.skills-sci a:hover{              /*styling the background text link of buttons*/
+    color: #081b29;
+}
+.skills-sci a::before{            /*styling the link of social media icons*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00c4cc;
+    z-index: -1;
+    transition: .5s;
+}
+
+.skills-sci a:hover:before{           /*styling the link of social media icons*/
+    width: 100%;
+}
+
+.mainSkills .skillbars .skillInfo{     /*styling the information of the skills*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skillbars .bar{                       /*styling the bars of the information*/
+    width: 100%;
+    height: 10px;
+    position: relative;
+   
+    border-radius: 25px;
+    margin-top: 5px;
+}
+.skillbars .skillInfo .rate{
+    font-weight: bold;
+}
+/*
+
+*/
+@keyframes css{             /*Creating keyframes for css*/
+    0%{
+        width: 0;
+    }100%{
+        width: 80%;
+    }
+}
+.skillbars .bar .python{
+    width: 75%;
+    animation: python 3s;
+}
+
+@keyframes python{          /*creating keyframes for python bar*/
+    0%{
+        width: 0;
+    }100%{
+        width: 75%;
+    }
+}
+.skillbars .bar .cpp{       
+    width: 70%;
+    animation: cpp 3s;
+}
+
+@keyframes cpp{          /*creating keyframes for C/C++ bar*/
+    0%{
+        width: 0;
+    }100%{
+        width: 70%;
+    }
+}
+.skillbars .bar .excel{
+    width: 70%;
+    animation: sql 3s;
+}
+
+@keyframes excel{       /*creating keyframes for excel*/
+    0%{
+        width: 0;
+    }100%{
+        width: 70%;
+    }
+}
+.skillbars .bar .spss{          /*styling SPSS bar*/
+    width: 67%;
+    animation: spss 3s;
+}
+
+@keyframes spss{            /*creating keyframes for SPSS*/
+    0%{
+        width: 0;
+    }100%{
+        width: 67%;
+    }
+}
+.skillbars .bar .r_stats{       /*styling R-Statistics bar*/
+    width: 60%;
+    animation: spss 3s;
+}
+
+@keyframes r_stats{         /*creating keyframes for R-Statistics*/
+    0%{
+        width: 0;
+    }100%{
+        width: 60%;
+    }
+}
+.skillbars .bar .flutter{           /*styling flutter bar*/
+    width: 51%;
+    animation: flutter 3s;
+}
+
+@keyframes flutter{             /*creating keyframes for Flutter*/
+    0%{
+        width: 0;
+    }100%{
+        width: 51%;
+    }
+}
+
+*/
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #00c4cc;
+    margin: 20px auto;
+    padding: 90px;
+}
+.education-container{
+    width: 100%;
+    padding: 85px 10%;
+}
+
+main.education-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    body{
+        width: 90%;
+        height: 90%;
+    }
+    
+}

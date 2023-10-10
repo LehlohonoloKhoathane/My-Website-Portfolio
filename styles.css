@@ -416,7 +416,7 @@ textarea{
     color: #2E3132;
 }
 .mainSkills{                            /*styling the mainhheadings in skills*/ 
-    width: 95%;
+    width: 75%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5,2fr);

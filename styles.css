@@ -639,7 +639,7 @@ main.education-row{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     /*body{
         width: 90%;
         height: 90%;
@@ -650,6 +650,9 @@ main.education-row{
         top: 75px;
         right: 0;
         z-index: 2;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     

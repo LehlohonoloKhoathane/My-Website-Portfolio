@@ -33,6 +33,12 @@ body{                                   /* styling body */
     font-weight: 700;
 }
 
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+
 .navbar a{                            /* styling links on a navigation bar */
     font-size: 18px;
     color: #00c4cc;
@@ -633,10 +639,63 @@ main.education-row{
 }
 
 
-@media only screen and (max-width: 400px) {
-    body{
+@media only screen and (max-width: 700px) {
+    /*body{
         width: 90%;
         height: 90%;
+    }*/
+    .navbar a{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
     }
+
     
 }
+
+
+
+
+
+
+
+/* CSS rules for smaller screens (up to 768 pixels wide) */
+@media (max-width: 768px) {
+    /* Adjust font sizes and spacing for smaller screens */
+    body {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  
+    /* Adjust padding/margin for smaller screens */
+    .container {
+      padding: 10px;
+    }
+  
+    /* Hide or adjust elements for smaller screens */
+    .hidden-on-small {
+      display: none;
+    }
+  
+    /* Make images responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Example of changing layout for smaller screens using flexbox */
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .flex-item {
+      margin: 10px 0;
+    }
+  }
+  
+
+
+

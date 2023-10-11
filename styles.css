@@ -37,6 +37,7 @@ body{                                   /* styling body */
 .menu-icon{
     width: 25px;
     cursor: pointer;
+    display: none;
 }
 nav{
     flex: 1;
@@ -51,7 +52,7 @@ nav ul li{
 .navbar ul{   
     list-style: none;
     display: inline-block;
-    margin-right: 30px;                         /* styling links on a navigation bar */
+    /*margin-right: 30px;*/                         /* styling links on a navigation bar */
     font-size: 18px;
     color: #00c4cc;
     text-decoration: none;
@@ -663,6 +664,17 @@ main.education-row{
         top: 75px;
         right: 0;
         z-index: 2;
+    }
+    .navbar ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar ul li{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
     }
     
 }

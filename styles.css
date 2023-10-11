@@ -48,7 +48,7 @@ nav ul li{
     margin-right: 30px;
 }
 
-.navbar a{                            /* styling links on a navigation bar */
+.navbar ul{                            /* styling links on a navigation bar */
     font-size: 18px;
     color: #00c4cc;
     text-decoration: none;

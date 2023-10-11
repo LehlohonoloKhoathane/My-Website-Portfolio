@@ -59,7 +59,11 @@ nav ul li{
     margin-left: 35px;
     transition: .3s;
 }
-
+.navbar ul li a{
+    text-decoration: none;
+    color: #00c4cc;
+    font-size: 14px;
+}
 .navbar a:hover,
 .navbar a.active{                     /* enabling a link to be selected , selecting and styling the active link in navigation bar */
     color: #081b29;

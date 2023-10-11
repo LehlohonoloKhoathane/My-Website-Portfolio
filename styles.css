@@ -676,6 +676,10 @@ main.education-row{
     .menu-icon{
         display: block;
     }
+    #listMenu{
+        overflow: hidden;
+        transition: 0.5s;
+    }
     
 }
 

@@ -28,7 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+//navigation bar menu on less than 700px screens
+let listMenu = document.getElementById('listMenu');
+listMenu.style.maxHeight = '0px';
+function toggleMenu(){
+    if(listMenu.style.maxHeight == '0px'){
+        listMenu.style.maxHeight = '130px';
+    }else{
+        listMenu.style.maxHeight = '0px';
+    }
+}
 /*function sendMessage(){
     var details = {
         name: document.getElementById("f_name").value,

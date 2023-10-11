@@ -657,7 +657,7 @@ main.education-row{
 
 @media only screen and (max-width: 700px) {
 
-    .navbar ul{
+    nav ul{
         width: 100%;
         background: linear-gradient(#ff54a2, #ff575a);
         position: absolute;
@@ -665,12 +665,12 @@ main.education-row{
         right: 0;
         z-index: 2;
     }
-    .navbar ul li{
+    nav ul li{
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .navbar ul li{
+    nav ul li{
         color: #fff;
     }
     .menu-icon{

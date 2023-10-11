@@ -644,7 +644,7 @@ main.education-row{
         width: 90%;
         height: 90%;
     }*/
-    .navbar a{
+    .navbar {
         width: 100%;
         position: absolute;
         top: 75px;
@@ -653,6 +653,7 @@ main.education-row{
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
+        background: linear-gradient(#FF54a2, #FF575a);
     }
 
     

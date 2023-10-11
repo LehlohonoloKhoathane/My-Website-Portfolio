@@ -48,7 +48,10 @@ nav ul li{
     margin-right: 30px;
 }
 
-.navbar ul{                            /* styling links on a navigation bar */
+.navbar ul{   
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;                         /* styling links on a navigation bar */
     font-size: 18px;
     color: #00c4cc;
     text-decoration: none;

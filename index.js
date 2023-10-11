@@ -1,3 +1,4 @@
+//smoothly scroll down to a click link on navigation bar
 document.querySelectorAll('a[href = "#"]').forEach(anchor =>{
     anchor.addEventListener('click', function(e){
         e.preventDefault();
@@ -10,7 +11,7 @@ document.querySelectorAll('a[href = "#"]').forEach(anchor =>{
 document.addEventListener('DOMContentLoaded', function() {
     var scrollToTopButton = document.getElementById('scrollToTopButton');
 
-    // Show the button when the user scrolls down a certain distance
+ // Show the button when the user scrolls down a certain distance
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) { // Adjust this value as needed
             scrollToTopButton.style.display = 'block';
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Scroll to the top when the button is clicked
+// Scroll to the top when the button is clicked
     scrollToTopButton.addEventListener('click', function() {
         window.scrollTo({
             top: 0,
@@ -42,11 +43,8 @@ function toggleMenu(){
 //get in touch button connecting to contacts section
 
 document.getElementById('getInTouch').addEventListener('click', function() {
-    document.querySelector('#contacts').scrollIntoView({
-      behavior: 'smooth'
-    });
+    document.querySelector('#contacts').scrollIntoView();
 });
-
 
 
 /*function sendMessage(){
@@ -70,14 +68,6 @@ document.getElementById('getInTouch').addEventListener('click', function() {
             alert("Your message send successfully...");
         }).catch((err) => console.error(err));
 }
-
-
-
-
-
-
-
-
 
 const myNames = ['Neo', 'Theo','Jakes', 'Den'];
 for(let i = 0; i < myNames.length; i++){
@@ -119,22 +109,6 @@ celebration.getFullYear();
             // Change the text using innerHTML
             paragraph.innerHTML = 'This is the updated text.';
         }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         function loadContent(url) {
             var xhttp = new XMLHttpRequest();

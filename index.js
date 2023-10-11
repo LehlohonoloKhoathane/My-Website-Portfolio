@@ -38,6 +38,17 @@ function toggleMenu(){
         listMenu.style.maxHeight = '0px';
     }
 }
+
+//get in touch button connecting to contacts section
+
+document.getElementById('getInTouch').addEventListener('click', function() {
+    document.querySelector('#contacts').scrollIntoView({
+      behavior: 'smooth'
+    });
+});
+
+
+
 /*function sendMessage(){
     var details = {
         name: document.getElementById("f_name").value,

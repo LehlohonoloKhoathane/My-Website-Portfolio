@@ -2,9 +2,7 @@
 document.querySelectorAll('a[href = "#"]').forEach(anchor =>{
     anchor.addEventListener('click', function(e){
         e.preventDefault();
-        document.querySelectorAll(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        })
+        document.querySelectorAll(this.getAttribute('href')).scrollIntoView()
     })
 })
 
@@ -23,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Scroll to the top when the button is clicked
     scrollToTopButton.addEventListener('click', function() {
         window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+            top: 0
         });
     });
 });

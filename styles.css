@@ -38,6 +38,15 @@ body{                                   /* styling body */
     width: 25px;
     cursor: pointer;
 }
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
 
 .navbar a{                            /* styling links on a navigation bar */
     font-size: 18px;

@@ -644,18 +644,22 @@ main.education-row{
         width: 90%;
         height: 90%;
     }*/
-    .navbar {
+    .header {
         width: 100%;
         position: absolute;
         top: 75px;
         right: 0;
         z-index: 2;
+        background: linear-gradient(#FF54a2, #FF575a);
+    }
+    .header nav{
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
-        background: linear-gradient(#FF54a2, #FF575a);
     }
-
+    .header nav a{
+        color: #fff;
+    }
     
 }
 

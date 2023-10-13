@@ -43,6 +43,21 @@ document.getElementById('getInTouch').addEventListener('click', function() {
     document.querySelector('#contacts').scrollIntoView();
 });
 
+//navbar section to disappear
+
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+        document.querySelector('.header').style.top = "0";
+    } else {
+        document.querySelector('.header').style.top = "-80px"; // Adjust this value to hide/show the menu
+    }
+    prevScrollPos = currentScrollPos;
+}
+
+
 
 /*function sendMessage(){
     var details = {

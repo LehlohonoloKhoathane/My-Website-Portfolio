@@ -1,6 +1,6 @@
-.about{        /* styling about ( text of about) */
+/*.about{        /* styling about ( text of about) 
     height: 100vh;
-    /*background: url('image/lehlo.jpg') no-repeat;*/
+    /*background: url('image/lehlo.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -13,19 +13,18 @@
 
 .about-txt{                     /*Styling the about text*/
   
-}
-
+/*
 .about-main{ 
-    border: 2px solid black;                   /*Styling the about container*/
+    border: 2px solid black;                   /*Styling the about container
     width: 1130px;
-    /*padding: 5px 50px 20px 0;*/
+    /*padding: 5px 50px 20px 0;
     max-width: 200%;
     align-items: center;
-    /*justify-content: space-around;*/
+    /*justify-content: space-around;
     
 }
-
-.about-txt h2{                  /*Styling the heading of the about*/
+/*
+.about-txt h2{                  /*Styling the heading of the about
     position: relative;
     color: #00c4cc;
     font-size: 50px;
@@ -33,7 +32,7 @@
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-
+*/
 .about-txt .btn-box{   /*Styling the button text in about*/
     position: relative;
     display: flex;

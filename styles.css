@@ -554,87 +554,7 @@ ski
 /*
 
 */
-@keyframes css{             /*Creating keyframes for css*/
-    0%{
-        width: 0;
-    }100%{
-        width: 80%;
-    }
-}
-.skillbars .bar .python{
-    width: 75%;
-    animation: python 3s;
-}
 
-@keyframes python{          /*creating keyframes for python bar*/
-    0%{
-        width: 0;
-    }100%{
-        width: 75%;
-    }
-}
-.skillbars .bar .cpp{       
-    width: 70%;
-    animation: cpp 3s;
-}
-
-@keyframes cpp{          /*creating keyframes for C/C++ bar*/
-    0%{
-        width: 0;
-    }100%{
-        width: 70%;
-    }
-}
-.skillbars .bar .excel{
-    width: 70%;
-    animation: sql 3s;
-}
-
-@keyframes excel{       /*creating keyframes for excel*/
-    0%{
-        width: 0;
-    }100%{
-        width: 70%;
-    }
-}
-.skillbars .bar .spss{          /*styling SPSS bar*/
-    width: 67%;
-    animation: spss 3s;
-}
-
-@keyframes spss{            /*creating keyframes for SPSS*/
-    0%{
-        width: 0;
-    }100%{
-        width: 67%;
-    }
-}
-.skillbars .bar .r_stats{       /*styling R-Statistics bar*/
-    width: 60%;
-    animation: spss 3s;
-}
-
-@keyframes r_stats{         /*creating keyframes for R-Statistics*/
-    0%{
-        width: 0;
-    }100%{
-        width: 60%;
-    }
-}
-.skillbars .bar .flutter{           /*styling flutter bar*/
-    width: 51%;
-    animation: flutter 3s;
-}
-
-@keyframes flutter{             /*creating keyframes for Flutter*/
-    0%{
-        width: 0;
-    }100%{
-        width: 51%;
-    }
-}
-
-*/
 
 hr{
     width: 90%;
@@ -683,47 +603,119 @@ main.education-row{
     
 }
 
-
-
-
-
-
-
-/* CSS rules for smaller screens (up to 768 pixels wide) */
-@media (max-width: 768px) {
-    /* Adjust font sizes and spacing for smaller screens */
-    body {
-      font-size: 14px;
-      line-height: 1.6;
+/* CSS parts for different screens  sizes */
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
     }
-  
-    /* Adjust padding/margin for smaller screens */
-    .container {
-      padding: 10px;
+}
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
     }
-  
-    /* Hide or adjust elements for smaller screens */
-    .hidden-on-small {
-      display: none;
+    section{
+        padding: 10rem 3% 2rem;
     }
-  
-    /* Make images responsive */
-    img {
-      max-width: 100%;
-      height: auto;
+    .portfolio{
+        padding-bottom: 7rem;
     }
-  
-    /* Example of changing layout for smaller screens using flexbox */
-    .flex-container {
-      display: flex;
-      flex-direction: column;
+    .myServices{
+        padding-bottom: 7rem;
     }
-  
-    .flex-item {
-      margin: 10px 0;
+    .contacts{
+        min-height: auto;
     }
-  }
-  
+    .footer{
+        padding: 2rem 3%;
+    }
+}
 
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar .active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about h2{
+        font-size: 2.6rem;
+    }
+    .about p{
+        font-size: 1.6rem;
+    }
+    .about img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .contacts form .inputBox input {
+        width: 100%;
+    }
+}
+@media (max-width: 365px){
+    .home-img{
+        width: 90vw;
+    }
+    .about-img img{
+        width: 90vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
 
-
+ 

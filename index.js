@@ -38,7 +38,6 @@ function toggleMenu(){
 }
 
 //get in touch button connecting to contacts section
-
 document.getElementById('getInTouch').addEventListener('click', function() {
     document.querySelector('#contacts').scrollIntoView();
 });

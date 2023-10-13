@@ -41,3 +41,37 @@
     width: 345px;
     height: 50px;
 }
+
+#about{
+    position: relative;
+}
+.aboutdetails{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutContainer{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.aboutContainer, .aboutdetails{
+    display: flex;
+}
+.picAbout{
+    border-radius: 2rem;
+}
+.arrowIcon{
+    position: relative;
+    right: -10rem;
+    bottom: 2.5rem;
+}
+.detailsContainer{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}

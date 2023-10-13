@@ -284,12 +284,12 @@ nav ul li{
     animation-delay: 4s;
     pointer-events: none;
 }
-
-.home-imgHover:hover{               /*styling the image on home page*/
+/*
+.home-imgHover:hover{               /*styling the image on home page
     background: #fffff4;
     opacity: .8;
 }
-
+*/
 .footerBottom{                          /*styling the footer */
     background-color: #fffff4;
     padding: 20px;

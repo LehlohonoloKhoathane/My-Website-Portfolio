@@ -12,12 +12,13 @@
     justify-content: center;
     flex-direction: column;
 }
-/*
+
 .aboutContainer{
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+/*
 .aboutContainer, .aboutdetails{
     display: flex;
 }

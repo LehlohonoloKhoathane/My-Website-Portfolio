@@ -38,4 +38,12 @@
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
-.section
+.sectionContainer{
+    gap: 4rem;
+    height: 80%;
+}
+.sectionPicContainer{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}

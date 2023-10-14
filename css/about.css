@@ -28,6 +28,8 @@
     position: relative;
     right: -10rem;
     bottom: 2.5rem;
+    height: 10%;
+    width: 10%;
 }
 .detailsContainer{
     padding: 1.5rem;

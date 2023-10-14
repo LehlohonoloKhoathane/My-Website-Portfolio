@@ -8,11 +8,11 @@
 #about{
     position: relative;
 }
-/*.aboutdetails{
+.aboutdetails{
     justify-content: center;
     flex-direction: column;
 }
-
+/*
 .aboutContainer{
     gap: 2rem;
     margin-bottom: 2rem;

@@ -23,6 +23,7 @@
 }
 .picAbout{
     border-radius: 2rem;
+    float: right;
 }
 .arrowIcon{
     position: relative;
@@ -50,8 +51,6 @@
     margin: auto 0;
 }
 .textcontainer{
-    height: 400px;
-    width: 400px;
     background: white;
     border-radius: 2px;
     justify-content: right;

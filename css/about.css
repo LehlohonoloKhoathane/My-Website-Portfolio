@@ -19,14 +19,12 @@
     margin-top: 2rem;
     display: flex;
 }
-/*
-.aboutContainer, .aboutdetails{
-    display: flex;
-}
+
 .picAbout{
     border-radius: 2rem;
-    float: right;
+    float: left;
 }
+/*
 .arrowIcon{
     position: relative;
     right: -10rem;
